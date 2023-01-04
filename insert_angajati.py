@@ -118,7 +118,7 @@ with open('angajati.txt', 'w') as f:
         first_name, last_name = nume[_]
         email_add = email[_]
 
-        print(f"INSERT INTO Angajat values({id_angajat}, {id_manager}, {departments[len(departments) % 6]}, {last_name}, {first_name}, {email_add}, {nr_telefon[_]}, {data_angajare[_]}, {titlu_job[_]}, None)")
+        print(f"INSERT INTO Angajat values({id_angajat}, {id_manager}, {departments[len(departments) % 6]}, '{last_name}', '{first_name}', '{email_add}', '{nr_telefon[_]}', TO_DATE('{data_angajare[_]}', 'dd-mm-yyyy'), '{titlu_job[_]}', None)")
         id_angajat += 1
 
 
