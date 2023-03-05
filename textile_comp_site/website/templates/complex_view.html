@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}View complex{% endblock %} {% block content %}
+<h1 align="center">View complex</h1>
+
+<table style="border-collapse: collapse;">
+    <tr style="border: 1px solid black;">
+    {% for column in datafr.columns %}
+        <th style="border: 1px solid black;">{{ column }}</th>
+    {% endfor %}
+    </tr>
+    {% for index, row in datafr.iterrows() %}
+    <tr style="border: 1px solid black;">
+        {% for value in row %}
+        <td style="border: 1px solid black;">{{ value }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+{%endblock%}

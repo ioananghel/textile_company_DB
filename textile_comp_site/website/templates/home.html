@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Firma de Textile</h1>
+<form action="locatii" align="center">
+  <button type="submit">Vizualizati locatiile</button>
+</form>
+<form action="departamente" align="center">
+  <button type="submit">Vizualizati departamentele</button>
+</form>
+<form action="angajati" align="center">
+  <button type="submit">Vizualizati angajatii</button>
+</form>
+<form action="clienti" align="center">
+  <button type="submit">Vizualizati clientii</button>
+</form>
+<form action="furnizori" align="center">
+  <button type="submit">Vizualizati furnizorii</button>
+</form>
+<form action="obiecte" align="center">
+  <button type="submit">Vizualizati obiectele</button>
+</form>
+<form action="utilaje" align="center">
+  <button type="submit">Vizualizati utilajele</button>
+</form>
+<form action="comenzi" align="center">
+  <button type="submit">Vizualizati comenzile</button>
+</form>
+<form action="materiale" align="center">
+  <button type="submit">Vizualizati materialele necesare</button>
+</form>
+<form action="composed_view" align="center">
+  <button type="submit">Vizualizati view compus</button>
+</form>
+<form action="complex_view" align="center">
+  <button type="submit">Vizualizati view complex</button>
+</form>
+<form action="custom" align="center">
+  <button type="submit">Vizualizati persoanele angajate dupa 2021, ce lucreaza intr-o fabrica si departamentele acestora
+  </button>
+</form>
+<form action="custom_having" align="center">
+  <button type="submit">Vizualizati departamentele cu mai mult de 3 angajati si salariul mediu al acestora
+  </button>
+</form>
+
+<h3>Introduceti un query de modificare a datelor</h3>
+<form name="query" action="retrieve_data" method="get">
+  <input type="text" name="query">
+  <input type="submit" value="Aplicare query">
+</form>
+{% endblock %}
